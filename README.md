@@ -3,6 +3,7 @@
 [中文简介](#简介) | [English](#Introduction)
 
 ### 结果 | Result
+<img width="2480" height="1914" alt="resnet_training_curve" src="https://github.com/user-attachments/assets/80da8237-35f7-4181-ab49-c73495c3a0e8" />
 
 
 ---
