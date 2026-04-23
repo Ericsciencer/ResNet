@@ -58,7 +58,7 @@ With the simple bypass connection design, ResNet breaks the depth bottleneck of 
 
 
 
-**Note:** This experiment adopts the 10-class CIFAR-10 dataset. Considering the 32×32 low-resolution input (much smaller than the 224×224 input in the original paper), we have made targeted lightweight adaptation for ResNet: adjusting the kernel size and stride of the first convolutional layer, removing redundant early pooling and downsampling layers, and adapting the dimension of fully connected layers. The core residual mechanism including residual blocks and shortcut connections is completely retained.
+**Note:** This experiment adopts the 10-class CIFAR-10 dataset. Considering the 32×32 low-resolution input (much smaller than the 224×224 input in the original paper), we have made targeted lightweight adaptation for ResNet: adjusting the kernel size and stride of the first convolutional layer, removing redundant early pooling and downsampling layers, and adapting the dimension of fully connected layers. The core residual mechanism including residual blocks and shortcut connections is completely retained. (Based on ResNet-18, and according to the dataset, our network removes the initial maximum pooling layer and removes one residual block that does not contain 1*1, otherwise remains the same.)
 
 ## Dataset
 We used the CIFAR-10 dataset, a color image dataset that more closely approximates common objects. CIFAR-10 is a small dataset for recognizing common objects, compiled by Hhevsky and Ilya Sutskever. It contains RGB color images for 10 categories: airplane, automobile, bird, cat, deer, dog, frog, horse, ship, and truck. Each image is 32 × 32 pixels, with 6000 images per category. The dataset contains 50,000 training images and 10,000 test images.
